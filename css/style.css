@@ -2,6 +2,10 @@
     --vermelho-botao: #e50914;
 }
 
+body{
+    min-width: 320px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
 /*Navbar style*/
 .principal{
     background: url(/assets/capa-de-fundo.jpg);
@@ -11,7 +15,7 @@
     overflow: hidden;
     height: 100vh;
     width: 100%;
-    border-bottom: 8px solid #222;
+    border-bottom: 10px solid #222;
     z-index: 1;
 }
 .principal::after{
@@ -65,7 +69,9 @@
     margin-right: 40px;
     padding:8px 17px;
 }
+/*Cards*/
 
+/*Card Principal*/
 .card-principal{
     position: relative;
     display: flex;
@@ -120,8 +126,155 @@ form{
     border-radius: 3px;
 }
 
+/*Card Secundario*/
+.card-secundario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 10px solid #222;
+    padding: 50px 5%;
+    background-color: black;
+}
+.card-secundario-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #fff;
+    width: 40%;
+    
+ 
+}
+.card-secundario-texto h1{
+    text-align: center;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 20px;
+   
+}
+.card-secundario-texto h2{
+    margin-left: 40px;
+    text-align: start;
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.video-tv{
+    position: relative;
+}
+.img-tv{
+    position: relative;
+    width: 540px;
+    height: 350px;
+    z-index: 2;
+}
+.video-netflix{
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+    z-index: 1;
+}
+
+/*Card Terciario*/
+.card-terciario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 5%;
+    border-bottom: 10px solid #222;
+    background-color: black;
+    
+}
+.img-celular{
+    margin-left: 0px;
+}
+.stranger-cel{
+    max-width: 100%;
+    width: 500px;
+    height: 365px;
+}
+.card-terciario-texto{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 40%;
+    margin-left: 100px;
+    
+}
+.card-terciario-texto h1{
+    text-align: start;
+    font-size: 3.125rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.card-terciario-texto h2{
+    text-align: start;
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+/*Card quartenario*/
+.card-quarternario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 5%;
+    border-bottom: 10px solid #222;
+    background-color: black;
+}
+
+.card-quartenario-texto{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    
+    width: 100%;
+    height: 200px;
+
+}
+.card-quartenario-texto h1{
+    font-size: 3.125rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.card-quartenario-texto h2{
+    text-align: start;
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.devices{
+    position: relative;
+}
+.img-device{
+    position: relative;
+    width: 600px;
+    height: 450px;
+    z-index: 2;
+}
+
+.video-device{
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    height: 220px;
+    z-index: 1;
+}
 
 
+
+
+
+
+
+
+/*Media Queries*/
 @media screen and (max-width:557px){
     form{
         display: flex;
